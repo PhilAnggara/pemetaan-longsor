@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'MainController@index')
+    ->name('home');
+
+Route::prefix('admin')
+// ->middleware(['auth','only-admin'])
+->group(function() {
+    
+    Route::get('/', 'MainController@dashboard')->name('dashboard');
+    Route::get('/data-daerah-rawan', 'MainController@data')->name('data');
+
 });
