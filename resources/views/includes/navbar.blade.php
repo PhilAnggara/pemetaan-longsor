@@ -11,7 +11,7 @@
       @auth
         @if (auth()->user()->level == 'ADMIN')
           <a class="btn btn-default px-3 rounded-pill btn-prim" href="{{ route('dashboard') }}">
-            <i class="far fa-user-cog fa-sm"></i>
+            <i class="fal fa-user-cog fa-sm"></i>
             Admin
           </a>
         @else

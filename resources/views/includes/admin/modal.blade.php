@@ -14,9 +14,9 @@
           <div class="row">
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="nama_daerah">Nama Daerah</label>
-                <input type="text" id="nama_daerah" class="form-control" placeholder="Nama Daerah"
-                  name="nama_daerah">
+                <label for="nama_lokasi">Nama Daerah</label>
+                <input type="text" id="nama_lokasi" class="form-control" placeholder="Nama Daerah"
+                  name="nama_lokasi">
               </div>
             </div>
             <div class="col-md-6 col-12">
@@ -46,8 +46,8 @@
             <hr>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="tanah">Jenis Tanah</label>
-                <select class="form-select" id="tanah" name="tanah">
+                <label for="jenis_tanah">Jenis Tanah</label>
+                <select class="form-select" id="jenis_tanah" name="jenis_tanah">
                   <option selected disabled>-- Pilih Jenis Tanah --</option>
                   <option>Inceptisol Ultisol</option>
                   <option>Mediteran</option>
@@ -58,29 +58,29 @@
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="hujan">Cuarh Hujan</label>
-                <input type="text" id="hujan" class="form-control" placeholder="Curah Hujan"
-                  name="hujan">
+                <label for="curah_hujan">Cuarh Hujan</label>
+                <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
+                  name="curah_hujan">
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="kemiringan">Kemiringan Lereng</label>
-                <input type="text" id="kemiringan" class="form-control" placeholder="Kemiringan Lereng"
-                  name="kemiringan">
+                <label for="kemiringan_lereng">Kemiringan Lereng</label>
+                <input type="text" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng"
+                  name="kemiringan_lereng">
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="ketinggian">Ketinggian Lokasi</label>
-                <input type="number" id="ketinggian" class="form-control" placeholder="Ketinggian Lokasi"
-                  name="ketinggian">
+                <label for="ketinggian_lokasi">Ketinggian Lokasi</label>
+                <input type="number" id="ketinggian_lokasi" class="form-control" placeholder="Ketinggian Lokasi"
+                  name="ketinggian_lokasi">
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="penggunaan">Jenis Penggunaan Lahan</label>
-                <select class="form-select" id="penggunaan" name="penggunaan">
+                <label for="penggunaan_lahan">Jenis Penggunaan Lahan</label>
+                <select class="form-select" id="penggunaan_lahan" name="penggunaan_lahan">
                   <option selected disabled>-- Pilih Penggunaan Lahan --</option>
                   <option>Hutan</option>
                   <option>Perkebunan</option>
@@ -90,9 +90,9 @@
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="gambar">Foto Lokasi</label>
-                <input type="file" id="gambar" class="form-control" placeholder="Foto Lokasi"
-                  name="gambar">
+                <label for="path">Foto Lokasi</label>
+                <input type="file" id="path" class="form-control" placeholder="Foto Lokasi"
+                  name="path">
               </div>
             </div>
           </div>
@@ -239,8 +239,8 @@
 
         <form action="" method="post" enctype="multipart/form-data">
           <div class="input-group mb-3">
-            <input type="file" class="form-control" id="gambar"
-            name="gambar" placeholder="Foto Lokasi">
+            <input type="file" class="form-control" id="path"
+            name="path" placeholder="Foto Lokasi">
             <div class="input-group-append">
               <button class="btn icon icon-left btn-primary" type="submit">
                 <i class="fal fa-image"></i>
@@ -256,9 +256,9 @@
         <div class="row">
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="nama_daerah">Nama Daerah</label>
-              <input type="text" id="nama_daerah" class="form-control" placeholder="Nama Daerah"
-                name="nama_daerah">
+              <label for="nama_lokasi">Nama Daerah</label>
+              <input type="text" id="nama_lokasi" class="form-control" placeholder="Nama Daerah"
+                name="nama_lokasi">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -297,8 +297,8 @@
           </div>
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="tanah">Jenis Tanah</label>
-              <select class="form-select" id="tanah" name="tanah">
+              <label for="jenis_tanah">Jenis Tanah</label>
+              <select class="form-select" id="jenis_tanah" name="jenis_tanah">
                 <option selected disabled>-- Pilih Jenis Tanah --</option>
                 <option>Inceptisol Ultisol</option>
                 <option>Mediteran</option>
@@ -309,29 +309,29 @@
           </div>
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="hujan">Cuarh Hujan</label>
-              <input type="text" id="hujan" class="form-control" placeholder="Curah Hujan"
-                name="hujan">
+              <label for="curah_hujan">Cuarh Hujan</label>
+              <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
+                name="curah_hujan">
             </div>
           </div>
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="kemiringan">Kemiringan Lereng</label>
-              <input type="text" id="kemiringan" class="form-control" placeholder="Kemiringan Lereng"
-                name="kemiringan">
+              <label for="kemiringan_lereng">Kemiringan Lereng</label>
+              <input type="text" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng"
+                name="kemiringan_lereng">
             </div>
           </div>
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="ketinggian">Ketinggian Lokasi</label>
-              <input type="number" id="ketinggian" class="form-control" placeholder="Ketinggian Lokasi"
-                name="ketinggian">
+              <label for="ketinggian_lokasi">Ketinggian Lokasi</label>
+              <input type="number" id="ketinggian_lokasi" class="form-control" placeholder="Ketinggian Lokasi"
+                name="ketinggian_lokasi">
             </div>
           </div>
           <div class="col-md-6 col-12">
             <div class="form-group">
-              <label for="penggunaan">Jenis Penggunaan Lahan</label>
-              <select class="form-select" id="penggunaan" name="penggunaan">
+              <label for="penggunaan_lahan">Jenis Penggunaan Lahan</label>
+              <select class="form-select" id="penggunaan_lahan" name="penggunaan_lahan">
                 <option selected disabled>-- Pilih Penggunaan Lahan --</option>
                 <option>Hutan</option>
                 <option>Perkebunan</option>
