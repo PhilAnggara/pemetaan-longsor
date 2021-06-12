@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// *******
+// GLOBAL
+
+$color-1: #2D7CFD;
+$color-2: #1874C3;
+$bg-prim: #F8F8F8;
+$rawan-tinggi: #FF4446;
+$rawan-sedang: #FFEA2C;
+$tidak-rawan: #6DE459;
+$btn-col-1: #FDAC41;
+$btn-col-1-hov: #ffc16f;
+// $f-prim: 'Assistant', sans-serif;
+$f-brand: 'Lobster Two', cursive;
+
+.text-tinggi {
+  color: $rawan-tinggi;
+}
+.text-sedang {
+  color: $rawan-sedang;
+}
+.text-rendah {
+  color: $tidak-rawan;
+}
+
+.status {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.tidak-rawan {
+  background-color: $tidak-rawan;
+}
+.rawan-sedang {
+  background-color: $rawan-sedang;
+}
+.rawan-tinggi {
+  background-color: $rawan-tinggi;
+}
+
+// END OF GLOBAL
+// *************
+
+
+#app {
+  #sidebar {
+    .sidebar-wrapper {
+      .sidebar-header {
+        padding: 15px;
+        margin-bottom: -35px;
+        .brand-icon {
+          color: #1874C3;
+          font-size: 20px;
+        }
+        .brand {
+          font-family: $f-brand;
+          color: #53BEFE;
+          font-size: 24px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  #main {
+    .main-content {
+      .card-statistic {
+        .card-body {
+          .card-subtitle {
+            font-size: 16px;
+          }
+          .btn-detail{
+            background-color: white;
+            color: $color-1;
+            font-weight: 500;
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+          .status-group {
+            .status-circle {
+              height: 45px;
+              width: 45px;
+              margin-right: 20px;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 100;
+            }
+            h2 {
+              font-size: 36px;
+              font-weight: bold;
+              small {
+                font-size: 16px;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        img {
+          height: 150px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+#auth {
+  background-image: none;
+  background: #00b4db;
+  background: linear-gradient(to bottom, #acb6e5, #86fde8);
+  h3 {
+    font-family: $f-brand;
+    font-size: 30px;
+    font-style: italic;
+    i {
+      font-size: 26px;
+    }
+  }
+}

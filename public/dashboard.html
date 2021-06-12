@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="frontend/images/favicon.ico">
+  <title>Admin | Pemetaan Longsor</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="frontend-admin/css/bootstrap.css">
+  <link rel="stylesheet" href="frontend-admin/vendors/chartjs/Chart.min.css">
+  <link rel="stylesheet" href="frontend-admin/vendors/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" href="frontend-admin/css/app.css">
+  <link rel="stylesheet" href="frontend/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+  <link rel="stylesheet" href="frontend/styles/admin.css">
+  <!-- End of style -->
+</head>
+<body>
+
+  
+
+  <div id="app">
+
+    <div id="sidebar" class='active'>
+      <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+          <i class="fad fa-map-marked-alt brand-icon"></i>
+          <a href="dashboard.html" class="brand">Pemetaan Longsor</a>
+        </div>
+        <div class="sidebar-menu">
+          <ul class="menu">
+            <li class='sidebar-title'>Menu Utama</li>
+            <li class="sidebar-item active ">
+              <a href="dashboard.html" class='sidebar-link'>
+                <i class="far fa-chart-pie"></i>
+                <span>Data Keseluruhan</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="data-daerah.html" class='sidebar-link'>
+                <i class="far fa-map-marked-alt"></i>
+                <span>Data Derah Rawan</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+      </div>
+    </div>
+
+    <div id="main">
+      
+      <nav class="navbar navbar-header navbar-expand navbar-light">
+        <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+            <li class="dropdown">
+              <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                <div class="avatar me-1">
+                  <img src="https://ui-avatars.com/api/?background=37adf7&color=ffffff&bold=true&size=60&name=Admin" alt="" srcset="">
+                </div>
+                <div class="d-none d-md-block d-lg-inline-block">Admin</div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <a class="dropdown-item" href="index.html"><i data-feather="corner-up-left"></i> Kembali ke Beranda</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html"><i data-feather="log-out"></i> Keluar</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main-content container-fluid">
+        <div class="page-title mb-3">
+          <h3>Data Keseluruhan</h3>
+        </div>
+        <section class="section">
+          <div class="row mb-2">
+
+            <div class="col-12">
+              <div class="card card-statistic">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-white">Data Daerah Rawan</h6>
+                  
+                  <div class="row justify-content-around">
+
+                    <div class="status-group col-12 col-md-4 d-flex align-items-center justify-content-center my-3">
+                      <div class="status-circle rounded-circle tidak-rawan"></div>
+                      <div>
+                        <p class="text-white mb-0">Tidak Rawan</p>
+                        <h2 class="text-white">
+                          9 <small>Lokasi (18.0%)</small>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="status-group col-12 col-md-4 d-flex align-items-center justify-content-center my-3">
+                      <div class="status-circle rounded-circle rawan-sedang"></div>
+                      <div>
+                        <p class="text-white mb-0">Rawan Sedang</p>
+                        <h2 class="text-white">
+                          5 <small>Lokasi (10.0%)</small>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="status-group col-12 col-md-4 d-flex align-items-center justify-content-center my-3">
+                      <div class="status-circle rounded-circle rawan-tinggi"></div>
+                      <div>
+                        <p class="text-white mb-0">Rawan Tinggi</p>
+                        <h2 class="text-white">
+                          6 <small>Lokasi (12.0%)</small>
+                        </h2>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <hr class="text-white">
+                  <div class="text-center">
+                    <a href="data-daerah.html" class="btn btn-default btn-detail rounded-pill">Lihat Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+  
+      <!-- <footer>
+        <div class="footer clearfix mb-0 text-muted">
+          <div class="float-start">
+            <p>2020 &copy; Voler</p>
+          </div>
+        </div>
+      </footer> -->
+
+    </div>
+  </div>
+
+  
+  <!-- Script -->
+  <script src="frontend-admin/js/feather-icons/feather.min.js"></script>
+  <script src="frontend-admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="frontend-admin/js/app.js"></script>
+  <script src="frontend-admin/vendors/chartjs/Chart.min.js"></script>
+  <script src="frontend-admin/vendors/apexcharts/apexcharts.min.js"></script>
+  <script src="frontend-admin/js/pages/dashboard.js"></script>
+  <script src="frontend-admin/js/main.js"></script>
+  <!-- End of script -->
+</body>
+</html>

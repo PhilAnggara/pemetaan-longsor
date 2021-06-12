@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+// *******
+// GLOBAL
+
+// Variable
+$color-1: #2D7CFD;
+$color-2: #1874C3;
+$bg-prim: #F8F8F8;
+$rawan-tinggi: #FF4446;
+$rawan-sedang: #FFEA2C;
+$tidak-rawan: #6DE459;
+$btn-col-1: #FDAC41;
+$btn-col-1-hov: #ffc16f;
+$f-prim: 'Assistant', sans-serif;
+$f-navbar: 'Kaushan Script', cursive;
+
+body {
+  background: $bg-prim;
+  font-family: $f-prim;
+}
+
+// Utilities
+.btn-prim {
+  background-color: $btn-col-1;
+  color: #ffffff;
+  height: 42px;
+  width: 110px;
+  &:hover {
+    background-color: $btn-col-1-hov;
+    color: #ffffff;
+  }
+}
+.text-tinggi {
+  color: $rawan-tinggi;
+}
+.text-sedang {
+  color: $rawan-sedang;
+}
+.text-rendah {
+  color: $tidak-rawan;
+}
+
+.status {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.tidak-rawan {
+  background-color: $tidak-rawan;
+}
+.rawan-sedang {
+  background-color: $rawan-sedang;
+}
+.rawan-tinggi {
+  background-color: $rawan-tinggi;
+}
+
+// END OF GLOBAL
+// *************
+
+
+nav.navbar {
+  padding: 10px 50px;
+  background-color: #ffffff !important;
+  .navbar-brand {
+    font-family: $f-navbar;
+    font-size: 28px;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+main {
+  .content {
+    margin-top: 50px;
+
+    .header-card {
+      background-color: $color-1;
+      height: 60px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      .card-body {
+        h1 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+    .map-card {
+      border-radius: 20px;
+      overflow: hidden;
+      .card-body {
+        padding: 0;
+        iframe {
+          width: 100%;
+          height: 570px;
+          border: 0;
+        }
+      }
+    }
+    .data-keseluruhan {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .about {
+    background-color: #C7DEDF;
+    margin-top: 120px;
+  }
+}
+
+// .modal-detail {
+//   .modal-content {
+//     .modal-body {
+
+//     }
+//   }
+// }
+
+
+// ******
+// MOBILE
+@media (max-width: 992px) {
+  @import 'mobile';  
+}

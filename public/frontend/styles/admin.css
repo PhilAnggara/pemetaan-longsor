@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.text-tinggi {
+  color: #FF4446;
+}
+
+.text-sedang {
+  color: #FFEA2C;
+}
+
+.text-rendah {
+  color: #6DE459;
+}
+
+.status {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.tidak-rawan {
+  background-color: #6DE459;
+}
+
+.rawan-sedang {
+  background-color: #FFEA2C;
+}
+
+.rawan-tinggi {
+  background-color: #FF4446;
+}
+
+#app #sidebar .sidebar-wrapper .sidebar-header {
+  padding: 15px;
+  margin-bottom: -35px;
+}
+#app #sidebar .sidebar-wrapper .sidebar-header .brand-icon {
+  color: #1874C3;
+  font-size: 20px;
+}
+#app #sidebar .sidebar-wrapper .sidebar-header .brand {
+  font-family: "Lobster Two", cursive;
+  color: #53BEFE;
+  font-size: 24px;
+  font-style: italic;
+}
+#app #main .main-content .card-statistic .card-body .card-subtitle {
+  font-size: 16px;
+}
+#app #main .main-content .card-statistic .card-body .btn-detail {
+  background-color: white;
+  color: #2D7CFD;
+  font-weight: 500;
+}
+#app #main .main-content .card-statistic .card-body .btn-detail:hover {
+  background-color: #f1f1f1;
+}
+#app #main .main-content .card-statistic .card-body .status-group .status-circle {
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+}
+#app #main .main-content .card-statistic .card-body .status-group p {
+  font-size: 14px;
+  font-weight: 100;
+}
+#app #main .main-content .card-statistic .card-body .status-group h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+#app #main .main-content .card-statistic .card-body .status-group h2 small {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.modal .modal-dialog .modal-content .modal-body img {
+  height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#auth {
+  background-image: none;
+  background: #00b4db;
+  background: linear-gradient(to bottom, #acb6e5, #86fde8);
+}
+#auth h3 {
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  font-style: italic;
+}
+#auth h3 i {
+  font-size: 26px;
+}/*# sourceMappingURL=admin.css.map */
