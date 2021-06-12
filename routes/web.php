@@ -24,3 +24,6 @@ Route::prefix('admin')
     Route::get('/data-daerah-rawan', 'MainController@data')->name('data');
 
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
