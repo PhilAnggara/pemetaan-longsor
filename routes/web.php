@@ -17,7 +17,7 @@ Route::get('/', 'MainController@index')
     ->name('home');
 
 Route::prefix('admin')
-// ->middleware(['auth','only-admin'])
+->middleware(['auth','only-admin'])
 ->group(function() {
     
     Route::get('/', 'MainController@dashboard')->name('dashboard');

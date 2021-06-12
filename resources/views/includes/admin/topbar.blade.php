@@ -10,14 +10,20 @@
       <li class="dropdown">
         <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
           <div class="avatar me-1">
-            <img src="https://ui-avatars.com/api/?background=37adf7&color=ffffff&bold=true&size=60&name=Admin" alt="" srcset="">
+            <img src="https://ui-avatars.com/api/?background=37adf7&color=ffffff&bold=true&size=60&name={{ auth()->user()->name }}" alt="" srcset="">
           </div>
-          <div class="d-none d-md-block d-lg-inline-block">Admin</div>
+          <div class="d-none d-md-block d-lg-inline-block">{{ auth()->user()->name }}</div>
         </a>
         <div class="dropdown-menu dropdown-menu-end">
           <a class="dropdown-item" href="{{ route('home') }}"><i data-feather="corner-up-left"></i> Kembali ke Beranda</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{{ url('logout') }}"><i data-feather="log-out"></i> Keluar</a>
+          <form action="{{ url('logout') }}" method="POST">
+            @csrf
+            <button class="dropdown-item" type="submit">
+              <i data-feather="log-out"></i>
+              Keluar
+            </button>
+          </form>
         </div>
       </li>
     </ul>

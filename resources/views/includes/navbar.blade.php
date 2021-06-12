@@ -5,7 +5,25 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="btn btn-default px-3 rounded-pill btn-prim" href="{{ route('dashboard') }}">Masuk</a>
+      @guest
+        <a class="btn btn-default px-3 rounded-pill btn-prim" href="{{ route('dashboard') }}">Masuk</a>
+      @endguest
+      @auth
+        @if (auth()->user()->level == 'ADMIN')
+          <a class="btn btn-default px-3 rounded-pill btn-prim" href="{{ route('dashboard') }}">
+            <i class="far fa-user-cog fa-sm"></i>
+            Admin
+          </a>
+        @else
+        <form action="{{ url('logout') }}" method="POST">
+          @csrf
+          <button class="btn btn-default px-3 rounded-pill btn-prim" type="submit">
+            <i data-feather="log-out"></i>
+            Keluar
+          </button>
+        </form>
+        @endif
+      @endauth
     </div>
   </div>
 </nav>
