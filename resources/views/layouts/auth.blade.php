@@ -5,76 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="frontend/images/favicon.ico">
-  <title>Masuk | Pemetaan Longsor</title>
+  <title>
+    @yield('title')
+  </title>
 
   <!-- Style -->
-  <link rel="stylesheet" href="frontend-admin/css/bootstrap.css">
-  <link rel="stylesheet" href="frontend/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="{{ url('frontend-admin/css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url('frontend/vendor/fontawesome/css/all.min.css') }}">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-  <link rel="stylesheet" href="frontend-admin/css/app.css">
-  <link rel="stylesheet" href="frontend/styles/admin.css">
+  <link rel="stylesheet" href="{{ url('frontend-admin/css/app.css') }}">
+  <link rel="stylesheet" href="{{ url('frontend/styles/admin.css') }}">
   <!-- End of style -->
 </head>
 <body>
 
-  <div id="auth">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-sm-12 mx-auto">
-          <div class="card pt-4">
-            <div class="card-body">
-              <div class="text-center mb-5">
-                <h3>
-                  <i class="fad fa-map-marked-alt brand-icon"></i>
-                  Pemetaan Longsor
-                </h3>
-                <p>Silahkan masuk untuk melanjutkan ke halaman Admin.</p>
-              </div>
-              <form action="index.html">
-                <div class="form-group position-relative has-icon-left">
-                  <label for="email">Email</label>
-                  <div class="position-relative">
-                    <input type="email" class="form-control" id="email" autocomplete="off">
-                    <div class="form-control-icon">
-                      <i data-feather="mail"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group position-relative has-icon-left">
-                  <div class="clearfix">
-                    <label for="password">Kata Sandi</label>
-                  </div>
-                  <div class="position-relative">
-                    <input type="password" class="form-control" id="password">
-                    <div class="form-control-icon">
-                      <i data-feather="lock"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class='form-check clearfix my-4'>
-                  <div class="checkbox float-start">
-                    <input type="checkbox" id="checkbox1" class='form-check-input'>
-                    <label for="checkbox1">Ingat Saya</label>
-                  </div>
-                </div>
-                <div class="clearfix">
-                  <button class="btn btn-primary float-end">Masuk</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  @yield('content')
   
   <!-- Script -->
-  <script src="frontend-admin/js/feather-icons/feather.min.js"></script>
-  <script src="frontend-admin/js/app.js"></script>
-  <script src="frontend-admin/js/main.js"></script>
+  <script src="{{ url('frontend-admin/js/feather-icons/feather.min.js') }}"></script>
+  <script src="{{ url('frontend-admin/js/app.js') }}"></script>
+  <script src="{{ url('frontend-admin/js/main.js') }}"></script>
   <!-- End of script -->
 </body>
 </html>
