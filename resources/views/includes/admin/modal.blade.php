@@ -379,10 +379,14 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-        <button type="button" class="btn icon icon-left btn-danger">
-          <i class="fal fa-trash-alt"></i>
-          Hapus
-        </button>
+        <form action="{{ route('lokasi.destroy', 1) }}" method="post">
+          @method('delete')
+          @csrf
+          <button type="submit" class="btn icon icon-left btn-danger">
+            <i class="fal fa-trash-alt"></i>
+            Hapus
+          </button>
+        </form>
       </div>
     </div>
   </div>

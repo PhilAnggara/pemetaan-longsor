@@ -41,7 +41,7 @@ class FuzzyController extends Controller
         $lokasi->delete();
 
         $fuzzy = PerhitunganFuzzy::where('id_lokasi', $id)->first();
-        $fuzzy->delete();
+        // $fuzzy->delete();
 
         return redirect()->back();
     }
