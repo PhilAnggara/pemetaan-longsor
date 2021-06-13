@@ -21,7 +21,10 @@ Route::prefix('admin')
 ->group(function() {
     
     Route::get('/', 'MainController@dashboard')->name('dashboard');
-    Route::get('/data-daerah-rawan', 'MainController@data')->name('data');
+    Route::get('data-daerah-rawan', 'MainController@dataLokasi')->name('data');
+    Route::post('tambah-gambar', 'MainController@tambahGambar')->name('upload-image');
+    Route::delete('hapus-gambar/{id}', 'MainController@hapusGambar')->name('delete-image');
+    Route::resource('lokasi', 'FuzzyController');
 
 });
 Auth::routes();

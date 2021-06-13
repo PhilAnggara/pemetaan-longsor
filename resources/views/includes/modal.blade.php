@@ -14,7 +14,7 @@
             <small class="text-muted">Informasi Umum</small>
             <table class="table">
               <tr>
-                <th scope="row">Nama Daerah</th>
+                <th scope="row">Nama Lokasi</th>
                 <td>:</td>
                 <td class="text-right">Dendengan Dalam, Lingk. I</td>
               </tr>

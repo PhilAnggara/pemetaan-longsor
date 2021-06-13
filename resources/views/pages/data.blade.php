@@ -20,7 +20,7 @@
               <table class="table table-hover border text-center text-nowrap" id="dataTable">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Nama Daerah</th>
+                    <th scope="col">Nama Lokasi</th>
                     <th scope="col">Kecamatan</th>
                     <th scope="col" width="100px">Status</th>
                     <th scope="col" width="100px">Aksi</th>
