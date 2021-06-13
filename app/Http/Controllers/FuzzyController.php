@@ -27,7 +27,7 @@ class FuzzyController extends Controller
         );
         Gambar::create($gambar);
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Data Berhasil Ditambahkan!');
     }
 
     public function update(Request $request, $id)
