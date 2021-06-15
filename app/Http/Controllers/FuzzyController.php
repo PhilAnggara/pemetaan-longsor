@@ -16,7 +16,15 @@ class FuzzyController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        $data['tingkat_kerawanan'] = 'Belum Diisi';
+
+        if ($data['penggunaan_lahan'] == 'Hutan') {
+            $data['tingkat_kerawanan'] = 'Tidak Rawan';
+        } elseif ($data['penggunaan_lahan'] == 'Perkebunan') {
+            $data['tingkat_kerawanan'] = 'Rawan Sedang';
+        } else {
+            $data['tingkat_kerawanan'] = 'Rawan Tinggi';
+        }
+        
         $lokasi = Lokasi::create($data);
         $data['koordinat'] = $data['latitude'].', '. $data['longitude'];
         // dd($data);
@@ -32,7 +40,20 @@ class FuzzyController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        if ($data['penggunaan_lahan'] == 'Hutan') {
+            $data['tingkat_kerawanan'] = 'Tidak Rawan';
+        } elseif ($data['penggunaan_lahan'] == 'Perkebunan') {
+            $data['tingkat_kerawanan'] = 'Rawan Sedang';
+        } else {
+            $data['tingkat_kerawanan'] = 'Rawan Tinggi';
+        }
+
+        $lokasi = Lokasi::find($id);
+        $lokasi->update($data);
+
+        return redirect()->back()->with('success', 'Data Berhasil Diubah!');
     }
 
     public function destroy($id)
@@ -43,6 +64,6 @@ class FuzzyController extends Controller
         $fuzzy = PerhitunganFuzzy::where('id_lokasi', $id)->first();
         // $fuzzy->delete();
 
-        return redirect()->back();
+        return redirect()->back()->with('toast_success', 'Data Dihapus!');
     }
 }

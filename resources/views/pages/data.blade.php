@@ -13,6 +13,14 @@
   <section class="section">
     <div class="row mb-2">
 
+      @if ($errors->any())
+        <div class="col">
+          @foreach ($errors->all() as $error)
+            <div class="alert alert-danger">{{ $error }}</div>
+          @endforeach
+        </div>
+      @endif
+
       <div class="col-12">
         <div class="card">
           <div class="card-body">
@@ -27,26 +35,34 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                    <td>Paal Dua</td>
-                    <td>
-                      <span class="status rawan-sedang">Rawan Sedang</span>
-                    </td>
-                    <td>
-                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                        <button type="button" class="btn icon btn-info" data-toggle="modal" data-target="#detailModal-id">
-                          <i class="fal fa-eye" data-toggle="tooltip" title="Lihat Detail"></i>
-                        </button>
-                        <button type="button" class="btn icon btn-primary" data-toggle="modal" data-target="#editModal-id">
-                          <i class="fal fa-edit" data-toggle="tooltip" title="Edit"></i>
-                        </button>
-                        <button type="button" class="btn icon btn-danger" data-toggle="modal" data-target="#hapusModal-id">
-                          <i class="fal fa-trash-alt" data-toggle="tooltip" title="Hapus"></i>
-                        </button>
-                    </div>
-                    </td>
-                  </tr>
+                  @foreach ($items as $item)
+                    <tr>
+                      <td class="text-center" scope="row">{{ $item->nama_lokasi }}</td>
+                      <td>{{ $item->kecamatan }}</td>
+                      <td>
+                        @if ($item->tingkat_kerawanan == 'Tidak Rawan')
+                          <span class="status tidak-rawan">{{ $item->tingkat_kerawanan }}</span>
+                        @elseif ($item->tingkat_kerawanan == 'Rawan Sedang')
+                          <span class="status rawan-sedang">{{ $item->tingkat_kerawanan }}</span>
+                        @else
+                          <span class="status rawan-tinggi">{{ $item->tingkat_kerawanan }}</span>  
+                        @endif
+                      </td>
+                      <td>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                          <button type="button" class="btn icon btn-info" data-toggle="modal" data-target="#detailModal-{{ $item->id }}">
+                            <i class="fal fa-eye" data-toggle="tooltip" title="Lihat Detail"></i>
+                          </button>
+                          <button type="button" class="btn icon btn-primary" data-toggle="modal" data-target="#editModal-{{ $item->id }}">
+                            <i class="fal fa-edit" data-toggle="tooltip" title="Edit"></i>
+                          </button>
+                          <button type="button" class="btn icon btn-danger" data-toggle="modal" data-target="#hapusModal-{{ $item->id }}">
+                            <i class="fal fa-trash-alt" data-toggle="tooltip" title="Hapus"></i>
+                          </button>
+                      </div>
+                      </td>
+                    </tr>
+                  @endforeach
                 </tbody>
               </table>
             </div>
@@ -57,6 +73,7 @@
     </div>
   </section>
 </div>
+@include('includes.admin.modal')
 @endsection
 
 @push('addon-style')

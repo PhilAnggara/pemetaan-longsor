@@ -19,13 +19,25 @@
 
     <div class="row justify-content-around data-keseluruhan px-sm-5">
       <div class="col-sm-3">
-        <h3><i class="fas fa-circle fa-xl text-tinggi mr-2"></i> Rawan Tinggi <span class="float-right">6(12.0%)</span></h3>
+        <h3>
+          <i class="fas fa-circle fa-xl text-rendah mr-2"></i> 
+          Tidak Rawan 
+          <span class="float-right">{{ $tidak_rawan }} ({{ number_format($trp, 2) }}%)</span>
+        </h3>
       </div>
       <div class="col-sm-3">
-        <h3><i class="fas fa-circle fa-xl text-sedang mr-2"></i> Rawan Sedang <span class="float-right">5(10.0%)</span></h3>
+        <h3>
+          <i class="fas fa-circle fa-xl text-sedang mr-2"></i> 
+          Rawan Sedang 
+          <span class="float-right">{{ $rawan_sedang }} ({{ number_format($rsp , 2) }}%)</span>
+        </h3>
       </div>
       <div class="col-sm-3">
-        <h3><i class="fas fa-circle fa-xl text-rendah mr-2"></i> Rawan Rendah <span class="float-right">9(18.0%)</span></h3>
+        <h3>
+          <i class="fas fa-circle fa-xl text-tinggi mr-2"></i> 
+          Rawan Tinggi 
+          <span class="float-right">{{ $rawan_tinggi }} ({{ number_format($rtp , 2) }}%)</span>
+        </h3>
       </div>
     </div>
 
@@ -49,76 +61,28 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                <td>Paal Dua</td>
-                <td>1.4827016516049476, 124.8567744425684</td>
-                <td>
-                  <span class="status rawan-sedang">Rawan Sedang</span>
-                </td>
-                <td>
-                  <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-id">
-                    <i class="fal fa-eye"></i>
-                    Detail
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                <td>Paal Dua</td>
-                <td>1.4827016516049476, 124.8567744425684</td>
-                <td>
-                  <span class="status rawan-tinggi">Rawan Tinggi</span>
-                </td>
-                <td>
-                  <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-id">
-                    <i class="fal fa-eye"></i>
-                    Detail
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                <td>Paal Dua</td>
-                <td>1.4827016516049476, 124.8567744425684</td>
-                <td>
-                  <span class="status tidak-rawan">Tidak Rawan</span>
-                </td>
-                <td>
-                  <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-id">
-                    <i class="fal fa-eye"></i>
-                    Detail
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                <td>Paal Dua</td>
-                <td>1.4827016516049476, 124.8567744425684</td>
-                <td>
-                  <span class="status rawan-sedang">Rawan Sedang</span>
-                </td>
-                <td>
-                  <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-id">
-                    <i class="fal fa-eye"></i>
-                    Detail
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center" scope="row">Dendengan Dalam, Lingk. I</td>
-                <td>Paal Dua</td>
-                <td>1.4827016516049476, 124.8567744425684</td>
-                <td>
-                  <span class="status tidak-rawan">Tidak Rawan</span>
-                </td>
-                <td>
-                  <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-id">
-                    <i class="fal fa-eye"></i>
-                    Detail
-                  </button>
-                </td>
-              </tr>
+              @foreach ($items as $item)
+                <tr>
+                  <td class="text-center" scope="row">{{ $item->nama_lokasi }}</td>
+                  <td>{{ $item->kecamatan }}</td>
+                  <td>{{ $item->latitude }}, {{ $item->longitude }}</td>
+                  <td>
+                    @if ($item->tingkat_kerawanan == 'Tidak Rawan')
+                      <span class="status tidak-rawan">{{ $item->tingkat_kerawanan }}</span>
+                    @elseif ($item->tingkat_kerawanan == 'Rawan Sedang')
+                      <span class="status rawan-sedang">{{ $item->tingkat_kerawanan }}</span>
+                    @else
+                      <span class="status rawan-tinggi">{{ $item->tingkat_kerawanan }}</span>  
+                    @endif
+                  </td>
+                  <td>
+                    <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#detailModal-{{ $item->id }}">
+                      <i class="fal fa-eye"></i>
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

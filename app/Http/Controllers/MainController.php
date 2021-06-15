@@ -16,8 +16,35 @@ class MainController extends Controller
     public function index()
     {
         $items = Lokasi::with('gambar','fuzzy')->get();
+        $total = Lokasi::all()->count();
+        $tidak_rawan = Lokasi::where('tingkat_kerawanan', 'Tidak Rawan')->count();
+        $rawan_sedang = Lokasi::where('tingkat_kerawanan', 'Rawan Sedang')->count();
+        $rawan_tinggi = Lokasi::where('tingkat_kerawanan', 'Rawan Tinggi')->count();
+
+        if ($tidak_rawan) {
+            $tidak_rawan_percent = $tidak_rawan / $total * 100;
+        } else {
+            $tidak_rawan_percent = 0;
+        }
+        if ($rawan_sedang) {
+            $rawan_sedang_percent = $rawan_sedang / $total * 100;
+        } else {
+            $rawan_sedang_percent = 0;
+        }
+        if ($rawan_tinggi) {
+            $rawan_tinggi_percent = $rawan_tinggi / $total * 100;
+        } else {
+            $rawan_tinggi_percent = 0;
+        }
+        
         return view('pages.home', [
-            'items' => $items
+            'items' => $items,
+            'tidak_rawan' => $tidak_rawan,
+            'rawan_sedang' => $rawan_sedang,
+            'rawan_tinggi' => $rawan_tinggi,
+            'trp' => $tidak_rawan_percent,
+            'rsp' => $rawan_sedang_percent,
+            'rtp' => $rawan_tinggi_percent
         ]);
     }
     
@@ -68,13 +95,13 @@ class MainController extends Controller
         );
 
         Gambar::create($data);
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Gambar Berhasil Ditambahkan!');
     }
     public function hapusGambar($id)
     {
         $item = Gambar::find($id);
         $item->delete();
 
-        return redirect()->back();
+        return redirect()->back()->with('toast_success', 'Gambar Dihapus!');
     }
 }

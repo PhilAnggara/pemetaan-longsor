@@ -29,8 +29,6 @@
     </div>
   </div>
 
-  @include('includes.admin.modal')
-
   @stack('prepend-script')
   @include('includes.admin.script')
   @include('sweetalert::alert')

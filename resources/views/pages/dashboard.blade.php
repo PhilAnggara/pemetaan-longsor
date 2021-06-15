@@ -21,7 +21,7 @@
                 <div>
                   <p class="text-white mb-0">Tidak Rawan</p>
                   <h2 class="text-white">
-                    9 <small>Lokasi (18.0%)</small>
+                    {{ $tidak_rawan }} <small>Lokasi ({{ number_format($trp, 2) }}%)</small>
                   </h2>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                 <div>
                   <p class="text-white mb-0">Rawan Sedang</p>
                   <h2 class="text-white">
-                    5 <small>Lokasi (10.0%)</small>
+                    {{ $rawan_sedang }} <small>Lokasi ({{ number_format($rsp, 2) }}%)</small>
                   </h2>
                 </div>
               </div>
@@ -39,7 +39,7 @@
                 <div>
                   <p class="text-white mb-0">Rawan Tinggi</p>
                   <h2 class="text-white">
-                    6 <small>Lokasi (12.0%)</small>
+                    {{ $rawan_tinggi }} <small>Lokasi ({{ number_format($rtp, 2) }}%)</small>
                   </h2>
                 </div>
               </div>
