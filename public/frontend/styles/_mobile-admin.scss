@@ -1,0 +1,45 @@
+#app {
+  #main {
+    .main-content {
+      .page-title {
+        h3 {
+          font-size: 20px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+      .card-statistic {
+        .card-body {
+          .card-subtitle {
+            font-size: 12px;
+          }
+          .status-group {
+            margin-left: -100px;
+            .status-circle {
+              height: 40px;
+              width: 40px;
+              margin-right: 20px;
+            }
+            p {
+              font-size: 14px;
+            }
+            h2 {
+              font-size: 30px;
+              font-weight: bold;
+              small {
+                font-size: 16px;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+      table {
+        tr {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+nav.navbar {
+  padding: 10px 10px;
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+main {
+  .content {
+    margin-top: 30px;
+
+    .header-card {
+      height: 40px;
+      .card-body {
+        h1 {
+          font-size: 16px;
+          margin-top: -10px;
+        }
+      }
+    }
+    .map-card {
+      .card-body {
+        iframe {
+          height: 500px;
+        }
+      }
+    }
+    .table-card {
+      .card-body {
+        table {
+          tr {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .data-keseluruhan {
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .about {
+    p {
+      font-size: 14px;
+    }
+  }
+}

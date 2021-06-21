@@ -94,4 +94,38 @@
 }
 #auth h3 i {
   font-size: 26px;
+}
+
+@media (max-width: 992px) {
+  #app #main .main-content .page-title h3 {
+    font-size: 20px;
+  }
+  #app #main .main-content .page-title button {
+    font-size: 12px;
+  }
+  #app #main .main-content .card-statistic .card-body .card-subtitle {
+    font-size: 12px;
+  }
+  #app #main .main-content .card-statistic .card-body .status-group {
+    margin-left: -100px;
+  }
+  #app #main .main-content .card-statistic .card-body .status-group .status-circle {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  #app #main .main-content .card-statistic .card-body .status-group p {
+    font-size: 14px;
+  }
+  #app #main .main-content .card-statistic .card-body .status-group h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #app #main .main-content .card-statistic .card-body .status-group h2 small {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  #app #main .main-content table tr {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=admin.css.map */
