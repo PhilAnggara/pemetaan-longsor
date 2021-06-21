@@ -13,7 +13,7 @@
     
     <div data-aos="zoom-in-up" class="card map-card shadow-sm">
       <div class="card-body">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13415.65232772802!2d124.84158037631818!3d1.4744423090520349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1622990065385!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+        <div id="mapid"></div>
       </div>
     </div>
 
@@ -108,9 +108,6 @@
 </main>
 @endsection
 
-@push('addon-style')
-  <style></style>
-@endpush
 @push('addon-script')
-  <script></script>
+  @include('includes.map-script')
 @endpush

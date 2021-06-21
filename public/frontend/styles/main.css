@@ -81,7 +81,7 @@ main .content .map-card {
 main .content .map-card .card-body {
   padding: 0;
 }
-main .content .map-card .card-body iframe {
+main .content .map-card .card-body #mapid {
   width: 100%;
   height: 570px;
   border: 0;
@@ -124,7 +124,7 @@ main .about {
     font-size: 16px;
     margin-top: -10px;
   }
-  main .content .map-card .card-body iframe {
+  main .content .map-card .card-body #mapid {
     height: 500px;
   }
   main .content .table-card .card-body table tr {
