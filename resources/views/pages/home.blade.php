@@ -94,13 +94,9 @@
   <div data-aos="fade-up" class="about border-top py-4">
     <div class="container">
       <p class="font-weight-bold">Tentang Aplikasi Ini</p>
-      <p class="font-weight-bold text-muted">Lorem ipsum dolor sit.</p>
+      {{-- <p class="font-weight-bold text-muted">Pemetaan daerah rawan longsor</p> --}}
       <p class="text-justify">
-        &emsp; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos temporibus, tempore officiis soluta rerum quo perferendis eius est porro. Tempora reprehenderit odio cupiditate magni, optio tempore laborum explicabo ipsa eligendi fugit aperiam non fugiat neque quas temporibus architecto ipsum suscipit quod modi id soluta rem voluptas perspiciatis facilis. Beatae magni cupiditate animi delectus architecto aliquam ut neque necessitatibus excepturi ad nostrum non incidunt doloremque, omnis illo quam unde dolorum nihil dicta placeat sed tenetur. Voluptate, fugit pariatur! Id laudantium autem qui, odit vel voluptatum fugit numquam animi aut non quis quasi, consequatur fugiat! Inventore cumque magnam veniam, debitis magni minima.
-      </p>
-      <p class="font-weight-bold text-muted">Lorem, ipsum.</p>
-      <p class="text-justify">
-        &emsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ullam rerum cum non amet officiis aliquam! Sed, nobis nesciunt eaque neque nulla ipsum laborum facilis ducimus! Dignissimos blanditiis consectetur similique hic non numquam, quae iure aperiam illum voluptates. Accusantium, aliquid pariatur? Praesentium rerum hic, odio neque expedita maxime facilis, blanditiis deserunt quisquam pariatur mollitia sint ullam laboriosam voluptatem repellat officia consectetur accusantium incidunt animi ipsum? Molestias tenetur autem voluptas praesentium.
+        &emsp; Aplikasi ini berisi tentang Pemetaan bencana tanah longsor merupakan sesuatu yang sangat dibutuhkan karena dengan adanya sistem ini akan memetakan wilayah – wilayah dengan tingkat rawan tanah longsor sehingga dapat membantu masyarakat ataupun pemerintah untuk menghindari kerusakan – kerusakan parah yang dapat memakan korban jiwa karena dengan melakukan pemetaan bencana tanah longsor maka pemerintah maupun masyarakat dapat terbantu untuk mengantisipasi dan mempersiapkan diri terhadap bencana tanah longsor yang akan terjadi. 
       </p>
     </div>
   </div>

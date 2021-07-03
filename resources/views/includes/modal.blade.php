@@ -60,7 +60,7 @@
                 <tr>
                   <th scope="row">Curah Hujan</th>
                   <td>:</td>
-                  <td class="text-right">{{ $item->curah_hujan }}mm (Menengah)</td>
+                  <td class="text-right">{{ $item->curah_hujan }} mm/bln (Menengah)</td>
                 </tr>
                 <tr>
                   <th scope="row">Kemiringan Lereng</th>
@@ -70,7 +70,7 @@
                 <tr>
                   <th scope="row">Ketinggian Lokasi</th>
                   <td>:</td>
-                  <td class="text-right">{{ $item->ketinggian_lokasi }}m (Rendah)</td>
+                  <td class="text-right">{{ $item->ketinggian_lokasi }} m (Rendah)</td>
                 </tr>
                 <tr>
                   <th scope="row">Penggunaan Lahan</th>
