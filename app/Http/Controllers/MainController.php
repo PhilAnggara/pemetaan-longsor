@@ -104,4 +104,11 @@ class MainController extends Controller
 
         return redirect()->back()->with('toast_success', 'Gambar Dihapus!');
     }
+
+    public function cekLokasi(Request $request)
+    {
+        $hasil = $this->fuzzy($request);
+        
+        return $hasil['tingkat_kerawanan'];
+    }
 }

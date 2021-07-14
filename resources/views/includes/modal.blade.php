@@ -102,7 +102,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="{{ route('lokasi.store') }}" method="post" enctype="multipart/form-data">
+      <form action="{{ route('cek-lokasi') }}" method="post">
         @csrf
 
         <div class="modal-body">

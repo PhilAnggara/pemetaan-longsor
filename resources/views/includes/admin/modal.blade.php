@@ -297,7 +297,13 @@
                 <div class="form-group">
                   <label for="status">Status</label>
                   <div class="mt-2">
-                    <span class="status rawan-sedang">Rawan Sedang</span>
+                    @if ($item->tingkat_kerawanan == 'Tidak Rawan')
+                      <span class="status tidak-rawan">{{ $item->tingkat_kerawanan }}</span>
+                    @elseif ($item->tingkat_kerawanan == 'Rawan Sedang')
+                      <span class="status rawan-sedang">{{ $item->tingkat_kerawanan }}</span>
+                    @else
+                      <span class="status rawan-tinggi">{{ $item->tingkat_kerawanan }}</span>  
+                    @endif
                   </div>
                 </div>
               </div>

@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'MainController@index')
     ->name('home');
+Route::post('cek-lokasi', 'MainController@cekLokasi')
+    ->name('cek-lokasi');
 
 Route::prefix('admin')
 ->middleware(['auth','only-admin'])
