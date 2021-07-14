@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,7 @@ Route::prefix('admin')
     Route::get('data-daerah-rawan', 'MainController@dataLokasi')->name('data');
     Route::post('tambah-gambar', 'MainController@tambahGambar')->name('upload-image');
     Route::delete('hapus-gambar/{id}', 'MainController@hapusGambar')->name('delete-image');
-    Route::resource('lokasi', 'FuzzyController');
+    Route::resource('lokasi', 'LokasiController');
 
 });
 Auth::routes();
