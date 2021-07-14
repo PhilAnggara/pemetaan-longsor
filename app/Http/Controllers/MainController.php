@@ -82,7 +82,7 @@ class MainController extends Controller
     }
     public function dataLokasi()
     {
-        $items = Lokasi::with('gambar','fuzzy')->get();
+        $items = Lokasi::with('gambar','fuzzy')->get()->sortDesc();
         return view('pages.data', compact('items'));
     }
     

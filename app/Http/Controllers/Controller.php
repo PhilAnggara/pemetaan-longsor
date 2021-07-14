@@ -98,7 +98,7 @@ class Controller extends BaseController
         // Kemiringan Lereng
         // Menentukan Kelas dan Nilai x
         if ($c >= 0 && $c <= 8) {
-            $c_kelas = 'Datas';
+            $c_kelas = 'Datar';
             $c_x = 0;
 
         } elseif ($c >= 8 && $c <= 15) {
