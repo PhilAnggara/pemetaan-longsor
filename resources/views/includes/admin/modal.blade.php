@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="curah_hujan">Cuarh Hujan <span class="text-lowercase">(mm/bln)</span></label>
+                <label for="curah_hujan">Curah Hujan <span class="text-lowercase">(mm/bln)</span></label>
                 <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
                   name="curah_hujan" required>
               </div>
@@ -315,7 +315,7 @@
               </div>
               <div class="col-md-6 col-12">
                 <div class="form-group">
-                  <label for="curah_hujan">Cuarh Hujan <span class="text-lowercase">(mm/bln)</span></label>
+                  <label for="curah_hujan">Curah Hujan <span class="text-lowercase">(mm/bln)</span></label>
                   <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
                     name="curah_hujan" value="{{ $item->curah_hujan }}" required>
                 </div>

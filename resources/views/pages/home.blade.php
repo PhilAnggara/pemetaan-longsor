@@ -41,6 +41,13 @@
       </div>
     </div>
 
+    <div class="row justify-content-center mb-4">
+      <button class="btn btn-lg btn-outline-primary rounded-pill" data-toggle="modal" data-target="#hitungModal">
+        <i class="fal fa-crosshairs mr-1"></i>
+        Cek Lokasi Saya
+      </button>
+    </div>
+
     <div data-aos="fade-right" class="card header-card text-white shadow">
       <div class="card-body">
         <h1 class="align-middle"><i class="fad fa-table mr-2"></i> Data Daerah Rawan</h1>
