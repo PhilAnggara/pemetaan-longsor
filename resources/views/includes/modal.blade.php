@@ -117,10 +117,9 @@
               <label for="jenis_tanah">Jenis Tanah</label>
               <select class="form-control" id="jenis_tanah" name="jenis_tanah" required>
                 <option value="" selected disabled>-- Pilih Jenis Tanah --</option>
-                <option>Inceptisol Ultisol</option>
-                <option>Mediteran</option>
-                <option>Andosol, grumosol</option>
-                <option>Regosol</option>
+                <option>Alluvial</option>
+                <option>Latosol/Litosol</option>
+                <option>Entisol</option>
               </select>
             </div>
           </div>

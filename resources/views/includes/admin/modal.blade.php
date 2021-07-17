@@ -52,10 +52,9 @@
                 <label for="jenis_tanah">Jenis Tanah</label>
                 <select class="form-select" id="jenis_tanah" name="jenis_tanah" required>
                   <option value="" selected disabled>-- Pilih Jenis Tanah --</option>
-                  <option>Inceptisol Ultisol</option>
-                  <option>Mediteran</option>
-                  <option>Andosol, grumosol</option>
-                  <option>Regosol</option>
+                  <option>Alluvial</option>
+                  <option>Latosol/Litosol</option>
+                  <option>Entisol</option>
               </select>
               </div>
             </div>
@@ -312,10 +311,9 @@
                   <label for="jenis_tanah">Jenis Tanah</label>
                   <select class="form-select" id="jenis_tanah" name="jenis_tanah" required>
                     <option selected disabled>-- Pilih Jenis Tanah --</option>
-                    <option {{ $item->jenis_tanah == 'Inceptisol Ultisol' ? 'selected' : '' }}>Inceptisol Ultisol</option>
-                    <option {{ $item->jenis_tanah == 'Mediteran' ? 'selected' : '' }}>Mediteran</option>
-                    <option {{ $item->jenis_tanah == 'Andosol, grumosol' ? 'selected' : '' }}>Andosol, grumosol</option>
-                    <option {{ $item->jenis_tanah == 'Regosol' ? 'selected' : '' }}>Regosol</option>
+                    <option {{ $item->jenis_tanah == 'Alluvial' ? 'selected' : '' }}>Alluvial</option>
+                    <option {{ $item->jenis_tanah == 'Latosol/Litosol' ? 'selected' : '' }}>Latosol/Litosol</option>
+                    <option {{ $item->jenis_tanah == 'Entisol' ? 'selected' : '' }}>Entisol</option>
                 </select>
                 </div>
               </div>

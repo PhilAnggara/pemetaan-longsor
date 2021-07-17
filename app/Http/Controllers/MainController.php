@@ -108,6 +108,8 @@ class MainController extends Controller
     public function cekLokasi(Request $request)
     {
         $hasil = $this->fuzzy($request);
+
+        dd($hasil);
         
         return $hasil['tingkat_kerawanan'];
     }

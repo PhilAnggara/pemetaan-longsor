@@ -16,7 +16,7 @@
   @foreach ($items as $item)
     var detail = '<img style="width: 200px;" src="{{ Storage::url($item->gambar->first()->path) }}"><p class="font-weight-bold">{{ $item->nama_lokasi }}.</p> <p>Kec. {{ $item->kecamatan }}.</p> <button class="btn btn-block btn-info btn-sm" data-toggle="modal" data-target="#detailModal-{{ $item->id }}">Lihat  Detail </button>';
 
-    L.circle([{{ $item->latitude }}, {{ $item->longitude }}], 250, {
+    L.circle([{{ $item->latitude }}, {{ $item->longitude }}], 200, {
 
       @if ($item->tingkat_kerawanan == 'Tidak Rawan')
         color: '#6DE459',
