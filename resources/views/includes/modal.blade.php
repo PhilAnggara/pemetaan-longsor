@@ -127,19 +127,18 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="curah_hujan">Curah Hujan (mm/bln)</label>
-              <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan" name="curah_hujan" required>
+              <input type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan" name="curah_hujan" required>
             </div>
             <div class="form-group col-md-6">
               <label for="kemiringan_lereng">Kemiringan Lereng (%)</label>
-              <input type="text" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
+              <input type="number" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
             </div>
           </div>
           
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="ketinggian_lokasi">Ketinggian Lokasi (m)</label>
-              <input type="number" class="form-control" id="ketinggian_lokasi" placeholder="Ketinggian Lokasi"
-              name="ketinggian_lokasi" required>
+              <input type="number" id="ketinggian_lokasi" class="form-control" placeholder="Ketinggian Lokasi" name="ketinggian_lokasi" required>
             </div>
             <div class="form-group col-md-6">
               <label for="penggunaan_lahan">Penggunaan Lahan</label>

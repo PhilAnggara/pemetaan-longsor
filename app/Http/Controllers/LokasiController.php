@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\LokasiiRequest;
+use App\Http\Requests\LokasiRequest;
 use App\Http\Requests\GambarRequest;
 use App\Models\Lokasi;
 use App\Models\PerhitunganFuzzy;
@@ -13,7 +13,7 @@ Use Alert;
 
 class LokasiController extends Controller
 {
-    public function store(Request $request)
+    public function store(LokasiRequest $request)
     {
         $data = $this->fuzzy($request);
         
@@ -28,7 +28,7 @@ class LokasiController extends Controller
         return redirect()->back()->with('success', 'Data Berhasil Ditambahkan!');
     }
 
-    public function update(Request $request, $id)
+    public function update(LokasiRequest $request, $id)
     {
         $data = $this->fuzzy($request);
 

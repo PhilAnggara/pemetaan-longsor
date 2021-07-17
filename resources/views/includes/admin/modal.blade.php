@@ -61,14 +61,14 @@
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <label for="curah_hujan">Curah Hujan <span class="text-lowercase">(mm/bln)</span></label>
-                <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
+                <input type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
                   name="curah_hujan" required>
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <label for="kemiringan_lereng">Kemiringan Lereng <span class="text-lowercase">(%)</span></label>
-                <input type="text" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
+                <input type="number" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
               </div>
             </div>
             <div class="col-md-6 col-12">
@@ -320,14 +320,14 @@
               <div class="col-md-6 col-12">
                 <div class="form-group">
                   <label for="curah_hujan">Curah Hujan <span class="text-lowercase">(mm/bln)</span></label>
-                  <input type="text" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
+                  <input type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
                     name="curah_hujan" value="{{ $item->curah_hujan }}" required>
                 </div>
               </div>
               <div class="col-md-6 col-12">
                 <div class="form-group">
                   <label for="kemiringan_lereng">Kemiringan Lereng <span class="text-lowercase">(%)</span></label>
-                  <input type="text" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng"
+                  <input type="number" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng"
                     name="kemiringan_lereng" value="{{ $item->kemiringan_lereng }}" required>
                 </div>
               </div>

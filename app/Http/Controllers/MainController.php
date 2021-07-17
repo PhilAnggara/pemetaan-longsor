@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\LokasiiRequest;
+use App\Http\Requests\LokasiRequest;
 use App\Http\Requests\GambarRequest;
 use App\Models\Lokasi;
 use App\Models\PerhitunganFuzzy;
