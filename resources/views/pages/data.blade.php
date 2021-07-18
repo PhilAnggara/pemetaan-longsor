@@ -77,7 +77,14 @@
 @endsection
 
 @push('addon-style')
-  <style></style>
+  <style>
+    .modal .modal-dialog .modal-content .modal-body .calculation {
+      color: #000000;
+    }
+    .modal .modal-dialog .modal-content .modal-body .calculation table {
+      color: #000000;
+    }
+  </style>
 @endpush
 @push('addon-script')
   <script></script>

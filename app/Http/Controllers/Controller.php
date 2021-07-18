@@ -252,6 +252,8 @@ class Controller extends BaseController
         $data['d'] = $d;
         $data['e'] = $e;
 
+        // dd($data);
+
         return $data;
     }
 }

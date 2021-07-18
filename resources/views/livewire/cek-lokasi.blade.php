@@ -58,10 +58,10 @@
           Reset
         </a>
       </div>
-      <div class="col-md-6 d-flex align-items-center justify-content-center">
-        {{-- <span class="status tidak-rawan btn-block">Tidak Rawan</span> --}}
-        {{-- <small class="text-muted font-italic">Status Lokasi</small> --}}
-      </div>
+      {{-- <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <span class="status tidak-rawan btn-block">Tidak Rawan</span>
+        <small class="text-muted font-italic">Status Lokasi</small>
+      </div> --}}
     </div>
 
   </form>
@@ -166,7 +166,7 @@
     </div>
     
     <div class="card shadow mt-2">
-      <div class="card-body">
+      <div class="card-body table-responsive">
         <h6 class="card-subtitle mb-2 text-center">Deffuzifikasi</h6>
         <table class="table table-bordered table-hover text-nowrap">
           <thead class="thead-light">

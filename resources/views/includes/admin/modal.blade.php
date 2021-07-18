@@ -1,6 +1,6 @@
 <!-- Modal Tambah Data -->
 <div class="modal fade" id="tambahDataModal" tabindex="-1" aria-labelledby="tambahDataModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header bg-success">
         <h5 class="modal-title white" id="tambahDataModalLabel">Tambah Data</h5>
@@ -8,103 +8,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="{{ route('lokasi.store') }}" method="post" enctype="multipart/form-data">
-        @csrf
-        <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
+      
+      @livewire('tambah-lokasi')
 
-        <div class="modal-body">
-
-          <div class="row">
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="nama_lokasi">Nama Lokasi</label>
-                <input type="text" id="nama_lokasi" class="form-control" placeholder="Nama Lokasi"
-                  name="nama_lokasi" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="kecamatan">Kecamatan</label>
-                <select class="form-select" id="kecamatan" name="kecamatan" required>
-                  <option value="" selected disabled>-- Pilih Kecamatan --</option>
-                  <option>Paal Dua</option>
-                  <option>Tikala</option>
-              </select>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="latitude ">Gari Lintang</label>
-                <input type="text" id="latitude " class="form-control" placeholder="Gari Lintang"
-                  name="latitude" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="longitude">Gari Bujur</label>
-                <input type="text" id="longitude" class="form-control" placeholder="Gari Bujur"
-                  name="longitude" required>
-              </div>
-            </div>
-            <hr>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="jenis_tanah">Jenis Tanah</label>
-                <select class="form-select" id="jenis_tanah" name="jenis_tanah" required>
-                  <option value="" selected disabled>-- Pilih Jenis Tanah --</option>
-                  <option>Alluvial</option>
-                  <option>Latosol/Litosol</option>
-                  <option>Entisol</option>
-              </select>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="curah_hujan">Curah Hujan <span class="text-lowercase">(mm/bln)</span></label>
-                <input type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan"
-                  name="curah_hujan" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="kemiringan_lereng">Kemiringan Lereng <span class="text-lowercase">(%)</span></label>
-                <input type="number" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="ketinggian_lokasi">Ketinggian Lokasi <span class="text-lowercase">(m)</span></label>
-                <input type="number" id="ketinggian_lokasi" class="form-control" placeholder="Ketinggian Lokasi" name="ketinggian_lokasi" required>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="penggunaan_lahan">Jenis Penggunaan Lahan</label>
-                <select class="form-select" id="penggunaan_lahan" name="penggunaan_lahan" required>
-                  <option value="" selected disabled>-- Pilih Penggunaan Lahan --</option>
-                  <option>Hutan</option>
-                  <option>Perkebunan</option>
-                  <option>Pemukiman Tinggal</option>
-              </select>
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="path">Foto Lokasi</label>
-                <input type="file" id="path" class="form-control" placeholder="Foto Lokasi" name="path" >
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-          <button type="submit" class="btn icon icon-left btn-success">
-            <i class="fal fa-plus"></i>
-            Tambahkan
-          </button>
-        </div>
-      </form>
     </div>
   </div>
 </div>
