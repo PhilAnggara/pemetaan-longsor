@@ -43,7 +43,7 @@
 
     <div class="row justify-content-center mb-4">
       <button class="btn btn-lg btn-outline-primary rounded-pill" data-toggle="modal" data-target="#hitungModal">
-        <i class="fal fa-crosshairs mr-1"></i>
+        <i class="fad fa-crosshairs mr-1"></i>
         Cek Lokasi Saya
       </button>
     </div>
@@ -113,4 +113,10 @@
 
 @push('addon-script')
   @include('includes.map-script')
+
+  {{-- @if ($calculate)
+    <script>
+      $('#hasilModal').modal('show');
+    </script>
+  @endif --}}
 @endpush

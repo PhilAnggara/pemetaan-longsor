@@ -15,7 +15,7 @@ class LokasiController extends Controller
 {
     public function store(LokasiRequest $request)
     {
-        $data = $this->fuzzy($request);
+        $data = $this->fuzzy($request->all());
         
         $lokasi = Lokasi::create($data);
 
@@ -30,7 +30,7 @@ class LokasiController extends Controller
 
     public function update(LokasiRequest $request, $id)
     {
-        $data = $this->fuzzy($request);
+        $data = $this->fuzzy($request->all());
 
         $lokasi = Lokasi::find($id);
         $lokasi->update($data);

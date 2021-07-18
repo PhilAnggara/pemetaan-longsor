@@ -91,7 +91,7 @@
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <label for="path">Foto Lokasi</label>
-                <input type="file" id="path" class="form-control" placeholder="Foto Lokasi" name="path" required>
+                <input type="file" id="path" class="form-control" placeholder="Foto Lokasi" name="path" >
               </div>
             </div>
           </div>

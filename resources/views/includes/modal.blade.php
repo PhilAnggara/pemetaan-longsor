@@ -102,86 +102,11 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="{{ route('cek-lokasi') }}" method="post">
-        @csrf
+      <div class="modal-body">
+        
+        @livewire('cek-lokasi')
 
-        <div class="modal-body">
-
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="nama_lokasi">Nama Lokasi</label>
-              <input type="text" class="form-control" id="nama_lokasi" placeholder="Nama Lokasi"
-              name="nama_lokasi" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="jenis_tanah">Jenis Tanah</label>
-              <select class="form-control" id="jenis_tanah" name="jenis_tanah" required>
-                <option value="" selected disabled>-- Pilih Jenis Tanah --</option>
-                <option>Alluvial</option>
-                <option>Latosol/Litosol</option>
-                <option>Entisol</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="curah_hujan">Curah Hujan (mm/bln)</label>
-              <input type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan" name="curah_hujan" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="kemiringan_lereng">Kemiringan Lereng (%)</label>
-              <input type="number" id="kemiringan_lereng" class="form-control" placeholder="Kemiringan Lereng" name="kemiringan_lereng" required>
-            </div>
-          </div>
-          
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="ketinggian_lokasi">Ketinggian Lokasi (m)</label>
-              <input type="number" id="ketinggian_lokasi" class="form-control" placeholder="Ketinggian Lokasi" name="ketinggian_lokasi" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="penggunaan_lahan">Penggunaan Lahan</label>
-              <select class="form-control" id="penggunaan_lahan" name="penggunaan_lahan" required>
-                <option value="" selected disabled>-- Pilih Penggunaan Lahan --</option>
-                  <option>Hutan</option>
-                  <option>Perkebunan</option>
-                  <option>Pemukiman Tinggal</option>
-              </select>
-            </div>
-          </div>
-
-          <hr>
-          
-          <div class="row">
-            <div class="col-md-6">
-              <button type="submit" class="btn icon icon-left btn-primary">
-                <i class="fal fa-crosshairs mr-1"></i>
-                Cek Status
-              </button>
-              <button type="button" class="btn icon icon-left btn-outline-secondary">
-                <i class="fal fa-undo mr-1"></i>
-                Reset
-              </button>
-            </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-              {{-- <span class="status tidak-rawan btn-block">Tidak Rawan</span> --}}
-              <small class="text-muted font-italic">Status Lokasi</small>
-            </div>
-          </div>
-
-        </div>
-        {{-- <div class="modal-footer justify-content-start">
-          <button type="submit" class="btn icon icon-left btn-primary">
-            <i class="fal fa-crosshairs mr-1"></i>
-            Cek Status
-          </button>
-          <button type="submit" class="btn icon icon-left btn-outline-secondary">
-            <i class="fal fa-undo mr-1"></i>
-            Reset
-          </button>
-        </div> --}}
-      </form>
+      </div>
     </div>
   </div>
 </div>

@@ -10,6 +10,10 @@
 <script src="{{ url('frontend/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ url('frontend/vendor/fotorama/fotorama.js') }}"></script>
 <script src="{{ url('frontend-admin/js/main.js') }}"></script>
+
+{{-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script> --}}
+
 <script>
   $(document).ready(function() {
     $('#dataTable').DataTable( {
