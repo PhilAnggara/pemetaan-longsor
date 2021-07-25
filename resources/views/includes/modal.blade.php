@@ -10,6 +10,12 @@
           </button>
         </div>
         <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <a href="https://www.google.com/maps/?t=k&q={{ $item->latitude.','.$item->longitude }}" target="_blank" class="btn btn-outline-danger btn-sm">
+              <i class="fal fa-map-marker-alt"></i>
+              Lihat di Google Maps
+            </a>
+          </div>
           <div class="row">
             <div class="col col-sm-6">
               <small class="text-muted">Informasi Umum</small>
@@ -102,11 +108,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
         
-        @livewire('cek-lokasi')
+      @livewire('cek-lokasi')
 
-      </div>
     </div>
   </div>
 </div>

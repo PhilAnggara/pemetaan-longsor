@@ -67,8 +67,6 @@ class TambahLokasi extends Component
         $this->kemiringan_lereng = '';
         $this->ketinggian_lokasi = '';
         $this->penggunaan_lahan = '';
-
-        // $this->path = '';
     }
 
     public function store()

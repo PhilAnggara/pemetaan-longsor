@@ -6,9 +6,6 @@
 <script src="{{ url('frontend/vendor/fotorama/fotorama.js') }}"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-{{-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script> --}}
-
 <script>
   $(document).ready(function() {
     $('#dataTable').DataTable( {
@@ -41,4 +38,8 @@
     delay: 50,
     duration: 600
   });
+
+  // $(document).on('change', '.custom-file-input', function (event) {
+  //   $(this).next('.custom-file-label').html(event.target.files[0].name);
+  // });
 </script>

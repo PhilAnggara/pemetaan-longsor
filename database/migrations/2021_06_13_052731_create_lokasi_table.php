@@ -15,7 +15,7 @@ class CreateLokasiTable extends Migration
     {
         Schema::create('lokasi', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user');
+            $table->foreignId('id_user')->nullable();
             $table->string('nama_lokasi');
             $table->string('kecamatan');
             $table->string('latitude');

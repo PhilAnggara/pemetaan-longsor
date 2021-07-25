@@ -177,8 +177,17 @@
                   <label for="kecamatan">Kecamatan</label>
                   <select class="form-select" id="kecamatan" name="kecamatan" required>
                     <option selected disabled>-- Pilih Kecamatan --</option>
+                    <option {{ $item->kecamatan == 'Bunaken' ? 'selected' : '' }}>Bunaken</option>
+                    <option {{ $item->kecamatan == 'Bunaken Kepulauan' ? 'selected' : '' }}>Bunaken Kepulauan</option>
+                    <option {{ $item->kecamatan == 'Malalayang' ? 'selected' : '' }}>Malalayang</option>
                     <option {{ $item->kecamatan == 'Paal Dua' ? 'selected' : '' }}>Paal Dua</option>
+                    <option {{ $item->kecamatan == 'Mapanget' ? 'selected' : '' }}>Mapanget</option>
+                    <option {{ $item->kecamatan == 'Sario' ? 'selected' : '' }}>Sario</option>
+                    <option {{ $item->kecamatan == 'Singkil' ? 'selected' : '' }}>Singkil</option>
                     <option {{ $item->kecamatan == 'Tikala' ? 'selected' : '' }}>Tikala</option>
+                    <option {{ $item->kecamatan == 'Tuminting' ? 'selected' : '' }}>Tuminting</option>
+                    <option {{ $item->kecamatan == 'Wanea' ? 'selected' : '' }}>Wanea</option>
+                    <option {{ $item->kecamatan == 'Wenang' ? 'selected' : '' }}>Wenang</option>
                 </select>
                 </div>
               </div>

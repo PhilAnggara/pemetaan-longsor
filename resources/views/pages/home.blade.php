@@ -87,6 +87,10 @@
                       <i class="fal fa-eye"></i>
                       Detail
                     </button>
+                    {{-- <a href="https://www.google.com/maps/?q={{ $item->latitude.','.$item->longitude }}" target="_blank" class="btn btn-danger btn-sm">
+                      <i class="fal fa-map-marker-alt"></i>
+                      Maps
+                    </a> --}}
                   </td>
                 </tr>
               @endforeach
@@ -113,10 +117,4 @@
 
 @push('addon-script')
   @include('includes.map-script')
-
-  {{-- @if ($calculate)
-    <script>
-      $('#hasilModal').modal('show');
-    </script>
-  @endif --}}
 @endpush

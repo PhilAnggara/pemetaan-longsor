@@ -15,7 +15,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        $items = Lokasi::with('gambar','fuzzy')->get();
+        $items = Lokasi::with('gambar','fuzzy')->get()->sortDesc();
         $total = Lokasi::all()->count();
         $tidak_rawan = Lokasi::where('tingkat_kerawanan', 'Tidak Rawan')->count();
         $rawan_sedang = Lokasi::where('tingkat_kerawanan', 'Rawan Sedang')->count();

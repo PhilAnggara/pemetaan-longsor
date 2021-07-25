@@ -240,7 +240,7 @@ class Controller extends BaseController
             $y['kelas'] = 'Rawan Tinggi';
         }
 
-        // Memasukan hasil perhitungan kedalam variable $data untuk disimpan ke database
+        // Memasukan hasil perhitungan kedalam variable variable data untuk disimpan ke database
         $data['pembilang'] = ($a['skor'] * $a['dk']) + ($b['skor'] * $b['dk']) + ($c['skor'] * $c['dk']) + ($d['skor'] * $d['dk']) + ($e['skor'] * $e['dk']);
         $data['penyebut'] = ($a['dk'] + $b['dk'] + $c['dk'] + $d['dk'] + $e['dk']) * 5;
         $data['skor_kerawanan'] = $y['hasil'];
@@ -251,8 +251,6 @@ class Controller extends BaseController
         $data['c'] = $c;
         $data['d'] = $d;
         $data['e'] = $e;
-
-        // dd($data);
 
         return $data;
     }

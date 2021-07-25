@@ -17,8 +17,17 @@
 						<label for="kecamatan">Kecamatan</label>
 						<select wire:model="kecamatan" class="form-select" id="kecamatan" name="kecamatan" required>
 							<option value="" selected>-- Pilih Kecamatan --</option>
+							<option>Bunaken</option>
+							<option>Bunaken Kepulauan</option>
+							<option>Malalayang</option>
 							<option>Paal Dua</option>
+							<option>Mapanget</option>
+							<option>Sario</option>
+							<option>Singkil</option>
 							<option>Tikala</option>
+							<option>Tuminting</option>
+							<option>Wanea</option>
+							<option>Wenang</option>
 					</select>
 					</div>
 				</div>
@@ -290,7 +299,7 @@
 
 		</div>
 		
-		<div class="modal-footer d-flex justify-content-end {{ $status ? 'd-block' : 'd-none' }}">
+		<div class="modal-footer {{ $status ? 'd-flex' : 'd-none' }}">
 			<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
 			<a wire:click="store" class="btn icon icon-left btn-success">
 				<i class="fal fa-save"></i>
