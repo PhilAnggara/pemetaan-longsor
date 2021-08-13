@@ -51,7 +51,7 @@
         </div>
         <div class="form-group col-md-6">
           <label for="curah_hujan">Curah Hujan (mm/bln)</label>
-          <input wire:model="curah_hujan" type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan" name="curah_hujan" required>
+          <input wire:model="curah_hujan" type="number" id="curah_hujan" class="form-control" placeholder="Curah Hujan yang turun perbulan" name="curah_hujan" required>
         </div>
       </div>
       
@@ -69,7 +69,7 @@
         <div class="form-group col-md-6">
           <label for="penggunaan_lahan">Penggunaan Lahan</label>
           <select wire:model="penggunaan_lahan" class="form-control" id="penggunaan_lahan" name="penggunaan_lahan" required>
-            <option value="" selected>-- Pilih Penggunaan Lahan --</option>
+            <option value="" selected>-- Pilih Jenis Penggunaan Lahan --</option>
             <option value="Hutan">Hutan</option>
             <option value="Perkebunan">Perkebunan</option>
             <option value="Pemukiman Tinggal">Pemukiman Tinggal</option>

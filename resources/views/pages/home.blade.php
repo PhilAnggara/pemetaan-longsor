@@ -104,10 +104,14 @@
 
   <div data-aos="fade-up" class="about border-top py-4">
     <div class="container">
-      <p class="font-weight-bold">Tentang Aplikasi Ini</p>
+      <p class="font-weight-bold">Tentang Aplikasi</p>
       {{-- <p class="font-weight-bold text-muted">Pemetaan daerah rawan longsor</p> --}}
       <p class="text-justify">
-        &emsp; Aplikasi ini berisi tentang Pemetaan bencana tanah longsor merupakan sesuatu yang sangat dibutuhkan karena dengan adanya sistem ini akan memetakan wilayah – wilayah dengan tingkat rawan tanah longsor sehingga dapat membantu masyarakat ataupun pemerintah untuk menghindari kerusakan – kerusakan parah yang dapat memakan korban jiwa karena dengan melakukan pemetaan bencana tanah longsor maka pemerintah maupun masyarakat dapat terbantu untuk mengantisipasi dan mempersiapkan diri terhadap bencana tanah longsor yang akan terjadi. 
+        &emsp; Aplikasi ini berisi tentang pemetaan bencana tanah longsor yang merupakan sesuatu yang sangat dibutuhkan karena dengan adanya sistem ini akan memetakan wilayah – wilayah dengan tingkat rawan tanah longsor sehingga dapat membantu masyarakat ataupun pemerintah untuk menghindari kerusakan – kerusakan parah yang dapat memakan korban jiwa karena dengan melakukan pemetaan bencana tanah longsor maka pemerintah maupun masyarakat dapat terbantu untuk mengantisipasi dan mempersiapkan diri terhadap bencana tanah longsor yang akan terjadi. 
+      </p>
+      <p class="font-weight-bold">Bagaimana Menghitung Lokasi di Aplikasi Ini</p>
+      <p class="text-justify">
+        &emsp; Untuk pengguna disediakan tombol <b><i>Cek Lokasi Saya</i></b> untuk mengecek lokasi tempat tinggal mereka apakah termasuk daerah rawan tanah longsor atau tidak. pada tombol <b><i>Cek Lokasi Saya</i></b> pengguna diminta untuk mengisi beberapa data yang ada seperti nama lokasi, kecamatan, garis lintang, garis bujur, jenis tanah, curah hujan, kemiringan lereng, ketinggian lokasi, penggunaan lahan, dan memasukan foto lokasi atau sekitaran lokasi. Untuk data jenis tanah, kemiringan lereng, ketinggian lokasi, dan penggunaan lahan pengguna dapat mendapatkannya di kantor <b class="text-muted">Badan Penanggulangan Bencana Daerah Kota Manado</b>, dan untuk data curah hujan pengguna dapat mendapatkannya di Kantor <b class="text-muted">Badan Meteorologi Klimatologi dan Geofisika Kota Manado</b> yang bertempat di Kabupaten Minahasa Utara.
       </p>
     </div>
   </div>
